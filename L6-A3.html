@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <h1>REAL TIME VALIDATION USING JS</h1>
+    <hr />
+    <form id="loginform" onsubmit="validate(event)">
+      <fieldset>
+        <!--email input field-->
+        <div>
+          <label for="email">email</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <!--password input field with minimum length requirement-->
+        <div>
+          <label for="password">password</label>
+          <input type="password" id="password" name="password" minlength="8" />
+        </div>
+        <!--age input field with minimum and maximum value requirements-->
+        <div>
+          <label for="age">age</label>
+          <input type="number" id="age" name="age" min="12" max="50" />
+        </div>
+        <!--submit button for form-->
+        <button type="submit">login</button>
+      </fieldset>
+    </form>
+    <!--for displaying validation massages-->
+    <div id="message"></div>
+    <!--link to the js file-->
+    <script src="script1.js"></script>
+  </body>
+</html>
